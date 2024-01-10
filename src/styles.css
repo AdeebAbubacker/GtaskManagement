@@ -1,1 +1,215 @@
-/* You can add global styles to this file, and also import other style files */
+/* ===== Global Font ===== */
+body,
+html {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f5f6fa; /* subtle light background */
+}
+
+/* ===== Headings ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #222;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 0.5px;
+}
+
+/* Main header */
+h1 {
+  font-size: 28px;
+}
+
+/* Sub headers */
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 20px;
+}
+h4 {
+  font-size: 18px;
+}
+
+/* ===== Paragraphs and small text ===== */
+p,
+span,
+label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===== Buttons ===== */
+button,
+.primary-btn,
+.secondary-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 8px 18px;
+}
+
+.primary-btn:hover {
+  background-color: #45a049;
+}
+
+.secondary-btn {
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 18px;
+}
+
+.secondary-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  background-color: #2f3640;
+  color: #fff;
+}
+
+.sidebar h2.logo {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  color: #fff;
+  transition: background 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  background-color: #4caf50;
+}
+
+/* ===== Cards / Task Items ===== */
+.task-card,
+.task-item {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.task-item h4 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.task-item span {
+  font-size: 13px;
+  color: #777;
+}
+
+/* ===== Stats Cards ===== */
+.stats .stat-card {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  padding: 15px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.stats .stat-card p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #777;
+}
+
+.stats .stat-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+
+/* ===== Toggle Switch for Status ===== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 28px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Optional: Add text labels inside toggle */
+.switch::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}

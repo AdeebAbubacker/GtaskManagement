@@ -1,0 +1,253 @@
+<div class="auth-wrapper">
+  <!-- Beautiful floating objects (more diverse) -->
+  <div class="floating-objects">
+    <!-- Geometric shapes -->
+    <div class="floating-shape circle"></div>
+    <div class="floating-shape triangle"></div>
+    <div class="floating-shape square"></div>
+    <div class="floating-shape hexagon"></div>
+
+    <!-- Task-related icons -->
+    <div class="floating-icon">📅</div>
+    <div class="floating-icon">✅</div>
+    <div class="floating-icon">📊</div>
+    <div class="floating-icon">📈</div>
+    <div class="floating-icon">🎯</div>
+    <div class="floating-icon">⏰</div>
+    <div class="floating-icon">📝</div>
+    <div class="floating-icon">🔔</div>
+
+    <!-- Animated lines and dots -->
+    <div class="floating-dot"></div>
+    <div class="floating-dot"></div>
+    <div class="floating-dot"></div>
+    <div class="floating-dot"></div>
+    <div class="floating-dot"></div>
+
+    <!-- Small particles -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Animated progress circles -->
+  <div class="progress-circles">
+    <div class="progress-circle"></div>
+    <div class="progress-circle"></div>
+    <div class="progress-circle"></div>
+  </div>
+
+  <div class="auth-container">
+    <!-- Left side - Visual/Animation -->
+    <div class="auth-visual">
+      <div class="task-board-animation">
+        <div class="task-column todo">
+          <h4>To Do</h4>
+          <div class="task-card" style="animation-delay: 0.1s">
+            <div class="task-dot" style="background: #ff6b6b"></div>
+            <span>Design Review</span>
+          </div>
+          <div class="task-card" style="animation-delay: 0.3s">
+            <div class="task-dot" style="background: #4ecdc4"></div>
+            <span>Update Dashboard</span>
+          </div>
+        </div>
+        <div class="task-column progress">
+          <h4>In Progress</h4>
+          <div class="task-card" style="animation-delay: 0.5s">
+            <div class="task-dot" style="background: #45b7d1"></div>
+            <span>Team Meeting</span>
+          </div>
+        </div>
+        <div class="task-column done">
+          <h4>Done</h4>
+          <div class="task-card" style="animation-delay: 0.7s">
+            <div class="task-dot" style="background: #96ceb4"></div>
+            <span>Login UI</span>
+          </div>
+          <div class="task-card" style="animation-delay: 0.9s">
+            <div class="task-dot" style="background: #ffeaa7"></div>
+            <span>API Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats-banner">
+        <div class="stat">
+          <div class="stat-number">1,284</div>
+          <div class="stat-label">Tasks Completed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number">98%</div>
+          <div class="stat-label">Productivity</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side - Login Form -->
+    <div class="auth-card">
+      <div class="auth-header">
+        <div class="logo">
+          <div class="logo-icon">✓</div>
+          <span>TaskFlow</span>
+        </div>
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Manage your tasks efficiently</p>
+      </div>
+
+      <form (ngSubmit)="login()" #loginForm="ngForm" class="login-form">
+        <!-- Username Field with Error Handling -->
+        <div class="input-group">
+          <div class="input-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <input
+            type="text"
+            [(ngModel)]="username"
+            name="username"
+            #usernameInput="ngModel"
+            required
+            placeholder="Username or email"
+            [class.invalid]="
+              (usernameInput.invalid && usernameInput.touched) || error
+            "
+          />
+          <div
+            class="error-message"
+            *ngIf="usernameInput.invalid && usernameInput.touched"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            Username is required
+          </div>
+        </div>
+
+        <!-- Password Field with Error Handling -->
+        <div class="input-group">
+          <div class="input-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <input
+            type="password"
+            [(ngModel)]="password"
+            name="password"
+            #passwordInput="ngModel"
+            required
+            placeholder="Password"
+            [class.invalid]="
+              (passwordInput.invalid && passwordInput.touched) || error
+            "
+          />
+          <button
+            type="button"
+            class="password-toggle"
+            (click)="togglePasswordVisibility($event)"
+          >
+            👁️
+          </button>
+          <div
+            class="error-message"
+            *ngIf="passwordInput.invalid && passwordInput.touched"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            Password is required
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="checkbox">
+            <input type="checkbox" [(ngModel)]="rememberMe" name="rememberMe" />
+            <span>Remember me</span>
+          </label>
+        </div>
+
+        <!-- Main Error Message -->
+        <div class="main-error-message" *ngIf="error">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+          <span>{{ error }}</span>
+        </div>
+
+        <button
+          class="login-btn"
+          type="submit"
+          [disabled]="loading || !loginForm.valid"
+        >
+          <span *ngIf="!loading">Login to Dashboard</span>
+          <span *ngIf="loading" class="loading-spinner"></span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

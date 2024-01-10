@@ -1,0 +1,136 @@
+<div class="app-shell">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">Taskly</h2>
+    <nav>
+      <a class="active">Dashboard</a>
+      <a>My Tasks</a>
+      <a>Completed</a>
+      <a>Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <section class="main">
+    <!-- Top Bar -->
+    <header class="topbar">
+      <h1>My Tasks</h1>
+      <button class="primary-btn" (click)="openCreateForm()">+ New Task</button>
+    </header>
+
+    <!-- Create Task Form -->
+    <div class="task-form" *ngIf="showCreateForm">
+      <h3>Create Task</h3>
+
+      <input type="text" placeholder="Title" [(ngModel)]="newTask.title" />
+
+      <textarea
+        placeholder="Description"
+        [(ngModel)]="newTask.description"
+      ></textarea>
+
+      <input type="datetime-local" [(ngModel)]="newTask.dueDate" />
+
+      <div class="actions">
+        <button class="secondary-btn" (click)="closeCreateForm()">
+          Cancel
+        </button>
+
+        <button
+          class="primary-btn"
+          (click)="createTask()"
+          [disabled]="creating"
+        >
+          {{ creating ? "Creating..." : "Create Task" }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats" *ngIf="!loading && tasks.length > 0">
+      <div class="stat-card">
+        <p>Total Tasks</p>
+        <h3>{{ tasks.length }}</h3>
+      </div>
+
+      <div class="stat-card">
+        <p>To Do</p>
+        <h3>{{ inProgressCount }}</h3>
+      </div>
+
+      <div class="stat-card">
+        <p>Completed</p>
+        <h3>{{ completedCount }}</h3>
+      </div>
+    </div>
+
+    <!-- Loading -->
+    <div *ngIf="loading">Loading tasks...</div>
+
+    <!-- Scrollable Task List with Infinite Scroll -->
+    <!-- Scrollable Task List with Edit + Status -->
+    <div
+      class="task-card"
+      *ngIf="!loading && tasks.length > 0"
+      (scroll)="onScroll($event)"
+      style="height: 60vh; overflow-y: auto"
+    >
+      <div
+        class="task-item"
+        *ngFor="let task of tasks"
+        [class.completed]="task.isCompleted"
+      >
+        <div class="left">
+          <!-- EDIT ICON -->
+          <button class="icon-btn" (click)="openEdit(task)">✏️</button>
+          <div class="task-content">
+            <h4 class="task-title">{{ task.title }}</h4>
+            <p class="task-desc">{{ task.description }}</p>
+            <span class="task-date">
+              {{ task.dueDate | date : "short" }}
+            </span>
+          </div>
+        </div>
+
+        <!-- Status Toggle Button -->
+        <button
+          class="badge"
+          [class.high]="!task.isCompleted"
+          [class.low]="task.isCompleted"
+          (click)="toggleStatus(task)"
+        >
+          {{ task.isCompleted ? "Completed" : "To Do" }}
+        </button>
+      </div>
+
+      <!-- Loader for scroll -->
+      <div *ngIf="loadingMore" style="text-align: center; padding: 10px">
+        Loading more tasks...
+      </div>
+    </div>
+
+    <!-- EDIT MODAL -->
+    <div class="modal-backdrop" *ngIf="showEditModal">
+      <div class="modal">
+        <h3>Edit Task</h3>
+
+        <input type="text" [(ngModel)]="editTask.title" placeholder="Title" />
+
+        <textarea
+          [(ngModel)]="editTask.description"
+          placeholder="Description"
+        ></textarea>
+
+        <input type="datetime-local" [(ngModel)]="editTask.dueDate" />
+
+        <div class="actions">
+          <button class="secondary-btn" (click)="closeEdit()">Cancel</button>
+          <button class="primary-btn" (click)="updateTask()">Save</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Empty State -->
+    <div *ngIf="!loading && tasks.length === 0">No tasks found.</div>
+  </section>
+</div>

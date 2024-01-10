@@ -1,0 +1,9 @@
+export interface Task {
+  id: string;
+  title: string;
+  description: string;
+  isCompleted: boolean;
+  ownerUserId: string;
+  createdAt: string; 
+  dueDate: string; 
+}
