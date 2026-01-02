@@ -5,9 +5,6 @@ Admins can manage users and tasks, while users can create and track their own ta
 
 ---
 
-
-## 🚀 Experience the Angular App
-
 ## 🎯 Live Angular Demo
 
 [![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
@@ -15,50 +12,42 @@ Admins can manage users and tasks, while users can create and track their own ta
 
 ### 📋 Demo Credentials
 
-<table align="left">
+<table>
   <thead>
     <tr>
-      <th align="left" style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Role</th>
-      <th align="left" style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Username/Email</th>
-      <th align="left" style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Password</th>
+      <th align="left">Role</th>
+      <th align="left">Username/Email</th>
+      <th align="left">Password</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td align="left" style="padding: 10px;">
+      <td align="left">
         <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
       </td>
-      <td align="left" style="padding: 10px;">
-        <code>users</code>
-      </td>
-      <td align="left" style="padding: 10px;">
-        <code>user1234</code>
-      </td>
+      <td align="left"><code>users</code></td>
+      <td align="left"><code>user1234</code></td>
     </tr>
     <tr>
-      <td align="left" style="padding: 10px;">
+      <td align="left">
         <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
       </td>
-      <td align="left" style="padding: 10px;">
-        <code>suchitra655@gmail.com</code>
-      </td>
-      <td align="left" style="padding: 10px;">
-        <code>Suchitra1234</code>
-      </td>
+      <td align="left"><code>suchitra655@gmail.com</code></td>
+      <td align="left"><code>Suchitra1234</code></td>
     </tr>
     <tr>
-      <td align="left" style="padding: 10px;">
+      <td align="left">
         <img src="https://img.shields.io/badge/👑_Admin-FF5722?style=flat-square" alt="Admin">
       </td>
-      <td align="left" style="padding: 10px;">
-        <code>admins</code>
-      </td>
-      <td align="left" style="padding: 10px;">
-        <code>admin1234</code>
-      </td>
+      <td align="left"><code>admins</code></td>
+      <td align="left"><code>admin1234</code></td>
     </tr>
   </tbody>
 </table>
+
+<br/>
+
+---
 
 ## 🚀 Features
 
@@ -124,19 +113,21 @@ Admins can manage users and tasks, while users can create and track their own ta
 ### Default Users
 
 | Username | Password  | Role  | User ID   |
-|--------|-----------|-------|-----------|
-| admins | admin1234 | Admin | admin-001 |
-| users | user1234  | User  | user-001  |
+|----------|-----------|-------|-----------|
+| admins   | admin1234 | Admin | admin-001 |
+| users    | user1234  | User  | user-001  |
 
 ### Additional Users
 
-| Email                   | Password        | Role | User ID   |
-|-------------------------|-----------------|------|-----------|
-| suchitra655@gmail.com   | Suchitra1234    | User | user-002  |
-| lakshmi475@gmail.com    | Lakshmi1234     | User | user-003  |
-| abhilashSb@gmail.com    | Abjilash1234    | User | user-004  |
+| Email                   | Password     | Role | User ID   |
+|-------------------------|--------------|------|-----------|
+| suchitra655@gmail.com   | Suchitra1234 | User | user-002  |
+| lakshmi475@gmail.com    | Lakshmi1234  | User | user-003  |
+| abhilashSb@gmail.com    | Abjilash1234 | User | user-004  |
 
 ---
+
+
 
 ## ⚙️ How to Run the Project
 
