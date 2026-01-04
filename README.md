@@ -5,6 +5,71 @@ Admins can manage users and tasks, while users can create and track their own ta
 
 ---
 
+<!-- 🚀 ANGULAR DEMO SECTION START -->
+
+<div align="center">
+
+## 🎯 Live Angular Demo
+
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
+[![Open Demo](https://img.shields.io/badge/🌐_Open_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
+
+### 📋 Demo Credentials
+
+<table>
+  <thead>
+    <tr>
+      <th style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Role</th>
+      <th style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Username/Email</th>
+      <th style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px;">
+        <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
+      </td>
+      <td style="padding: 10px;">
+        <code>users</code>
+      </td>
+      <td style="padding: 10px;">
+        <code>user1234</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
+      </td>
+      <td style="padding: 10px;">
+        <code>suchitra655@gmail.com</code>
+      </td>
+      <td style="padding: 10px;">
+        <code>Suchitra1234</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 10px;">
+        <img src="https://img.shields.io/badge/👑_Admin-FF5722?style=flat-square" alt="Admin">
+      </td>
+      <td style="padding: 10px;">
+        <code>admins</code>
+      </td>
+      <td style="padding: 10px;">
+        <code>admin1234</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div align="center" style="margin-top: 20px;">
+  <small>💡 <em>Test different user roles to explore all features!</em></small>
+</div>
+
+</div>
+
+<!-- 🚀 ANGULAR DEMO SECTION END -->
+
+
 ## 🚀 Features
 
 ### 🔐 Authentication
