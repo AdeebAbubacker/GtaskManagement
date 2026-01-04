@@ -5,70 +5,43 @@ Admins can manage users and tasks, while users can create and track their own ta
 
 ---
 
-<!-- 🚀 ANGULAR DEMO SECTION START -->
+<<!-- ⚡ ANGULAR DEMO - MODERN DESIGN -->
 
-<div align="center">
+## 🚀 Experience the Angular App
 
-## 🎯 Live Angular Demo
+<a href="https://adeebabubacker.github.io/GtaskManagement/login" target="_blank">
+  <img src="https://img.shields.io/badge/▶️_Launch_Demo-FF4081?style=for-the-badge&logo=angular&logoColor=white" alt="Launch Demo">
+</a>
 
-[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
-[![Open Demo](https://img.shields.io/badge/🌐_Open_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
+<br/><br/>
 
-### 📋 Demo Credentials
+### 🗝️ Test Credentials
 
-<table>
-  <thead>
-    <tr>
-      <th style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Role</th>
-      <th style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Username/Email</th>
-      <th style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Password</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 10px;">
-        <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
-      </td>
-      <td style="padding: 10px;">
-        <code>users</code>
-      </td>
-      <td style="padding: 10px;">
-        <code>user1234</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px;">
-        <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
-      </td>
-      <td style="padding: 10px;">
-        <code>suchitra655@gmail.com</code>
-      </td>
-      <td style="padding: 10px;">
-        <code>Suchitra1234</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px;">
-        <img src="https://img.shields.io/badge/👑_Admin-FF5722?style=flat-square" alt="Admin">
-      </td>
-      <td style="padding: 10px;">
-        <code>admins</code>
-      </td>
-      <td style="padding: 10px;">
-        <code>admin1234</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px; max-width: 600px;">
 
-<div align="center" style="margin-top: 20px;">
-  <small>💡 <em>Test different user roles to explore all features!</em></small>
+<div style="background: linear-gradient(135deg, #4CAF50, #2E7D32); padding: 20px; border-radius: 12px; color: white; text-align: left;">
+  <h4>👤 Standard User</h4>
+  <p><strong>Username:</strong> <code>users</code></p>
+  <p><strong>Password:</strong> <code>user1234</code></p>
+</div>
+
+<div style="background: linear-gradient(135deg, #2196F3, #0D47A1); padding: 20px; border-radius: 12px; color: white; text-align: left;">
+  <h4>📧 Email User</h4>
+  <p><strong>Email:</strong> <code>suchitra655@gmail.com</code></p>
+  <p><strong>Password:</strong> <code>Suchitra1234</code></p>
+</div>
+
+<div style="background: linear-gradient(135deg, #FF5722, #BF360C); padding: 20px; border-radius: 12px; color: white; text-align: left;">
+  <h4>👑 Administrator</h4>
+  <p><strong>Username:</strong> <code>admins</code></p>
+  <p><strong>Password:</strong> <code>admin1234</code></p>
 </div>
 
 </div>
 
-<!-- 🚀 ANGULAR DEMO SECTION END -->
-
+<p style="margin-top: 25px;">
+  <small>💫 <em>Experience reactive forms, routing, and state management in action!</em></small>
+</p>
 
 ## 🚀 Features
 
