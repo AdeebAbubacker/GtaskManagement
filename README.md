@@ -8,28 +8,23 @@ Admins can manage users and tasks, while users can create and track their own ta
 <<!-- ⚡ ANGULAR DEMO - MODERN DESIGN -->
 
 ## 🚀 Experience the Angular App
+<!-- 🅰️ ANGULAR DEMO SECTION START -->
 
-<a href="https://adeebabubacker.github.io/GtaskManagement/login" target="_blank">
-  <img src="https://img.shields.io/badge/▶️_Launch_Demo-FF4081?style=for-the-badge&logo=angular&logoColor=white" alt="Launch Demo">
-</a>
+## 🌐 Live Angular Application
 
-<br/><br/>
+[![Live Demo](https://img.shields.io/badge/🚀_Try_It_Now-1976D2?style=for-the-badge&logo=angular&logoColor=white&labelColor=DD0031)](https://adeebabubacker.github.io/GtaskManagement/login)
 
-### 🗝️ Test Credentials
+### 🔐 Quick Login
 
-<div style="display: flex; flex-direction: column; gap: 15px; margin-top: 20px; max-width: 600px;">
+| Role | Credentials |
+|------|-------------|
+| **👤 User** | `users` / `user1234` |
+| **👤 User** | `suchitra655@gmail.com` / `Suchitra1234` |
+| **👑 Admin** | `admins` / `admin1234` |
 
-<div style="background: linear-gradient(135deg, #4CAF50, #2E7D32); padding: 20px; border-radius: 12px; color: white; text-align: left;">
-  <h4>👤 Standard User</h4>
-  <p><strong>Username:</strong> <code>users</code></p>
-  <p><strong>Password:</strong> <code>user1234</code></p>
-</div>
+<sub>✨ *Built with Angular • TypeScript • RxJS*</sub>
 
-<div style="background: linear-gradient(135deg, #2196F3, #0D47A1); padding: 20px; border-radius: 12px; color: white; text-align: left;">
-  <h4>📧 Email User</h4>
-  <p><strong>Email:</strong> <code>suchitra655@gmail.com</code></p>
-  <p><strong>Password:</strong> <code>Suchitra1234</code></p>
-</div>
+<!-- 🅰️ ANGULAR DEMO SECTION END -->
 
 <div style="background: linear-gradient(135deg, #FF5722, #BF360C); padding: 20px; border-radius: 12px; color: white; text-align: left;">
   <h4>👑 Administrator</h4>
