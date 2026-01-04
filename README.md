@@ -1,27 +1,102 @@
-# GtaskManagement
+# 🗂️ Task Management Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
+A simple **Task Management Web Application** built using **Angular**, supporting **Admin** and **User** roles.  
+Admins can manage users and tasks, while users can create and track their own tasks.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Features
 
-## Code scaffolding
+### 🔐 Authentication
+- Role-based login (Admin / User)
+- Static credential validation (demo purpose)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 👨‍💼 Admin Features
+- Admin dashboard
+- Manage users
+- Monitor tasks
 
-## Build
+### 👤 User Features
+- User dashboard
+- Create and manage tasks
+- View assigned and created tasks
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🖼️ Application Screenshots
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Admin Screens
 
-## Running end-to-end tests
+<table>
+  <tr>
+    <td>
+      <b>Admin Login</b><br/>
+      <img src="https://raw.githubusercontent.com/AdeebAbubacker/GtaskManagement/refs/heads/main/src/assets/images/AdminLogin.png" width="420"/>
+    </td>
+    <td>
+      <b>Admin Dashboard</b><br/>
+      <img src="https://raw.githubusercontent.com/AdeebAbubacker/GtaskManagement/refs/heads/main/src/assets/images/AdminDashboard.png" width="420"/>
+    </td>
+  </tr>
+</table>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+### User Screens
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<table>
+  <tr>
+    <td>
+      <b>User Login</b><br/>
+      <img src="https://raw.githubusercontent.com/AdeebAbubacker/GtaskManagement/refs/heads/main/src/assets/images/user_login.png" width="420"/>
+    </td>
+    <td>
+      <b>User Dashboard</b><br/>
+      <img src="https://raw.githubusercontent.com/AdeebAbubacker/GtaskManagement/refs/heads/main/src/assets/images/UserDashBoard.png" width="420"/>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<b>User Task Creation</b><br/>
+<img src="https://raw.githubusercontent.com/AdeebAbubacker/GtaskManagement/refs/heads/main/src/assets/images/userTaskCreation.png" width="860"/>
+
+---
+
+## 🔑 Login Credentials
+
+### Default Users
+
+| Username | Password  | Role  | User ID   |
+|--------|-----------|-------|-----------|
+| admins | admin1234 | Admin | admin-001 |
+| users | user1234  | User  | user-001  |
+
+### Additional Users
+
+| Email                   | Password        | Role | User ID   |
+|-------------------------|-----------------|------|-----------|
+| suchitra655@gmail.com   | Suchitra1234    | User | user-002  |
+| lakshmi475@gmail.com    | Lakshmi1234     | User | user-003  |
+| abhilashSb@gmail.com    | Abjilash1234    | User | user-004  |
+
+---
+
+## ⚙️ How to Run the Project
+
+### Prerequisites
+- Node.js (v16 or above)
+- Angular CLI
+
+Install Angular CLI if needed:
+```bash
+npm install -g @angular/cli
+
+git clone https://github.com/AdeebAbubacker/GtaskManagement
+
+cd GtaskManagement
+
+npm install
+
+ng serve --open
