@@ -5,10 +5,8 @@ Admins can manage users and tasks, while users can create and track their own ta
 
 ---
 
-<!-- ⚡ ANGULAR DEMO - MODERN DESIGN -->
 
 ## 🚀 Experience the Angular App
-<!-- 🚀 ANGULAR DEMO SECTION START -->
 
 ## 🎯 Live Angular Demo
 
@@ -61,24 +59,6 @@ Admins can manage users and tasks, while users can create and track their own ta
     </tr>
   </tbody>
 </table>
-
-<div style="clear: both; margin-top: 20px;">
-  💡 <em>Test different user roles to explore all features!</em>
-</div>
-
-<!-- 🚀 ANGULAR DEMO SECTION END -->
-
-<div style="background: linear-gradient(135deg, #FF5722, #BF360C); padding: 20px; border-radius: 12px; color: white; text-align: left;">
-  <h4>👑 Administrator</h4>
-  <p><strong>Username:</strong> <code>admins</code></p>
-  <p><strong>Password:</strong> <code>admin1234</code></p>
-</div>
-
-</div>
-
-<p style="margin-top: 25px;">
-  <small>💫 <em>Experience reactive forms, routing, and state management in action!</em></small>
-</p>
 
 ## 🚀 Features
 
