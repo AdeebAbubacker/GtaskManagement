@@ -6,7 +6,8 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:5164/api/Auth';
+  private apiUrl =
+    'https://weatherforecaste-bfcrb8afhhfufget.polandcentral-01.azurewebsites.net/api/Auth';
 
   constructor(private http: HttpClient) {}
 

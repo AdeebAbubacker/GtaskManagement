@@ -8,12 +8,12 @@ export interface CreateTaskRequest {
   description: string;
   dueDate: string;
 }
-
 @Injectable({
   providedIn: 'root',
 })
 export class TasksService {
-  private apiUrl = 'http://localhost:5164/api/Tasks';
+  private apiUrl =
+    'https://weatherforecaste-bfcrb8afhhfufget.polandcentral-01.azurewebsites.net/api/Tasks';
 
   constructor(private http: HttpClient) {}
 
