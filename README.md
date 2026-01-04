@@ -5,26 +5,68 @@ Admins can manage users and tasks, while users can create and track their own ta
 
 ---
 
-<<!-- ⚡ ANGULAR DEMO - MODERN DESIGN -->
+<!-- ⚡ ANGULAR DEMO - MODERN DESIGN -->
 
 ## 🚀 Experience the Angular App
-<!-- 🅰️ ANGULAR DEMO SECTION START -->
+<!-- 🚀 ANGULAR DEMO SECTION START -->
 
-## 🌐 Live Angular Application
+## 🎯 Live Angular Demo
 
-[![Live Demo](https://img.shields.io/badge/🚀_Try_It_Now-1976D2?style=for-the-badge&logo=angular&logoColor=white&labelColor=DD0031)](https://adeebabubacker.github.io/GtaskManagement/login)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
+[![Open Demo](https://img.shields.io/badge/🌐_Open_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://adeebabubacker.github.io/GtaskManagement/login)
 
-### 🔐 Quick Login
+### 📋 Demo Credentials
 
-| Role | Credentials |
-|------|-------------|
-| **👤 User** | `users` / `user1234` |
-| **👤 User** | `suchitra655@gmail.com` / `Suchitra1234` |
-| **👑 Admin** | `admins` / `admin1234` |
+<table align="left">
+  <thead>
+    <tr>
+      <th align="left" style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Role</th>
+      <th align="left" style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Username/Email</th>
+      <th align="left" style="padding: 12px; text-align: left; border-bottom: 2px solid #DD0031;">Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left" style="padding: 10px;">
+        <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
+      </td>
+      <td align="left" style="padding: 10px;">
+        <code>users</code>
+      </td>
+      <td align="left" style="padding: 10px;">
+        <code>user1234</code>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="padding: 10px;">
+        <img src="https://img.shields.io/badge/👤_User-4CAF50?style=flat-square" alt="User">
+      </td>
+      <td align="left" style="padding: 10px;">
+        <code>suchitra655@gmail.com</code>
+      </td>
+      <td align="left" style="padding: 10px;">
+        <code>Suchitra1234</code>
+      </td>
+    </tr>
+    <tr>
+      <td align="left" style="padding: 10px;">
+        <img src="https://img.shields.io/badge/👑_Admin-FF5722?style=flat-square" alt="Admin">
+      </td>
+      <td align="left" style="padding: 10px;">
+        <code>admins</code>
+      </td>
+      <td align="left" style="padding: 10px;">
+        <code>admin1234</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-<sub>✨ *Built with Angular • TypeScript • RxJS*</sub>
+<div style="clear: both; margin-top: 20px;">
+  💡 <em>Test different user roles to explore all features!</em>
+</div>
 
-<!-- 🅰️ ANGULAR DEMO SECTION END -->
+<!-- 🚀 ANGULAR DEMO SECTION END -->
 
 <div style="background: linear-gradient(135deg, #FF5722, #BF360C); padding: 20px; border-radius: 12px; color: white; text-align: left;">
   <h4>👑 Administrator</h4>
